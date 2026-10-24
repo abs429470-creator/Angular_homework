@@ -10,6 +10,6 @@ import { MarksOfStudentsComponent } from './marks-of-students/marks-of-students.
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'כניסה להתקנת תוכנות לימודיות על מחשב';
+  title = 'עולם התלמידים';
   acceptedTerms = false;
 }

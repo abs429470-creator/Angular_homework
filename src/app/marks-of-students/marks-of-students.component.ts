@@ -10,11 +10,11 @@ import { Marks } from '../Marks.interface';
 })
 export class MarksOfStudentsComponent {
   marks: Marks[] = [
-    { subject: 'Mathematics', mark: 60 },
-    { subject: 'Science', mark: 92 },
-    { subject: 'History', mark: 78 },
-    { subject: 'English', mark: 59 },
-    { subject: 'Art', mark: 95 }
+    { subject: 'מתמטיקה', mark: 60 },
+    { subject: 'מדעים', mark: 92 },
+    { subject: 'היסטוריה', mark: 78 },
+    { subject: 'אנגלית', mark: 59 },
+    { subject: 'אמנות', mark: 95 }
   ];
   get averageMark():number{
     if(this.marks.length===0)return 0;

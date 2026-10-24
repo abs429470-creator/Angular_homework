@@ -5,9 +5,9 @@
         {{item.subject}}: {{item.mark}} <br>
         @if (item.mark >= 60)
         {
-            <span> עבר</span>
+            <span class="passed"> עבר</span>
         }@else{
-            <span> לא עבר</span>
+            <span class="failed"> לא עבר</span>
         }
     </li>
 }@empty{
