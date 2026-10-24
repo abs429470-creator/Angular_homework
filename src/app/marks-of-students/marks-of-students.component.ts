@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Marks } from '../Marks.interface';
 
 @Component({
   selector: 'app-marks-of-students',
@@ -8,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrl: './marks-of-students.component.css'
 })
 export class MarksOfStudentsComponent {
-
+  marks: Marks[] = [
+    { subject: 'Mathematics', mark: 60 },
+    { subject: 'Science', mark: 92 },
+    { subject: 'History', mark: 78 },
+    { subject: 'English', mark: 59 },
+    { subject: 'Art', mark: 95 }
+  ];
+  get averageMark():number{
+    if(this.marks.length===0)return 0;
+    let sumOfMarks =0;
+    for (const item of this.marks){
+      sumOfMarks+=item.mark;
+    }
+    return sumOfMarks/ this.marks.length;
+  }
 }

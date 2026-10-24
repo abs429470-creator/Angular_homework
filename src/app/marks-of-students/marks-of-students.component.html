@@ -1,1 +1,19 @@
-<p>marks-of-students works!</p>
+<p>הציונים של כל מקצוע</p>
+<ul>
+    @for(item of marks; track item.subject){
+    <li>
+        {{item.subject}}: {{item.mark}} <br>
+        @if (item.mark >= 60)
+        {
+            <span> עבר</span>
+        }@else{
+            <span> לא עבר</span>
+        }
+    </li>
+}@empty{
+    <li>אין נתונים להצגה</li>
+}
+</ul>
+<p>ממוצע הציונים: <br>
+{{averageMark}}
+</p>
