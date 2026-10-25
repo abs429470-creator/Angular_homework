@@ -5,9 +5,9 @@
         {{item.subject}}: {{item.mark}} <br>
         @if (item.mark >= 60)
         {
-            <span class="passed"> עבר</span>
+            <span class="passed" > עבר</span>
         }@else{
-            <span class="failed"> לא עבר</span>
+            <span class="failed" [ngStyle]="{color: 'red', 'font-weight': 'bold'}"h> לא עבר</span>
         }
     </li>
 }@empty{

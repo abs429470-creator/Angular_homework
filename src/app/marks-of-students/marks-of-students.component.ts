@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Marks } from '../Marks.interface';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-marks-of-students',
   standalone: true,
-  imports: [],
+  imports: [NgStyle],
   templateUrl: './marks-of-students.component.html',
   styleUrl: './marks-of-students.component.css'
 })
