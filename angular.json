@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "lesonOne": {
+=======
+    "lesson_3": {
+>>>>>>> f539fcc (initial commit)
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/leson-one",
+=======
+            "outputPath": "dist/lesson_3",
+>>>>>>> f539fcc (initial commit)
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +72,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "lesonOne:build:production"
             },
             "development": {
               "buildTarget": "lesonOne:build:development"
+=======
+              "buildTarget": "lesson_3:build:production"
+            },
+            "development": {
+              "buildTarget": "lesson_3:build:development"
+>>>>>>> f539fcc (initial commit)
             }
           },
           "defaultConfiguration": "development"

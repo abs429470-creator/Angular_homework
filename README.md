@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # LesonOne
+=======
+# Lesson3
+>>>>>>> f539fcc (initial commit)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
 

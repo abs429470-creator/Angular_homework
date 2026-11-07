@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "leson-one",
+=======
+  "name": "lesson-3",
+>>>>>>> f539fcc (initial commit)
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +11,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+<<<<<<< HEAD
     "serve:ssr:lesonOne": "node dist/leson-one/server/server.mjs"
+=======
+    "serve:ssr:lesson_3": "node dist/lesson_3/server/server.mjs"
+>>>>>>> f539fcc (initial commit)
   },
   "private": true,
   "dependencies": {
