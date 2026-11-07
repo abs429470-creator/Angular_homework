@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-* {
-	box-sizing: border-box;
-}
-
-html,
-body {
-	min-height: 100%;
-	margin: 0;
-}
-
-body {
-	min-width: 320px;
-}
-=======
-/* You can add global styles to this file, and also import other style files */
->>>>>>> f539fcc (initial commit)
-=======
 html {
   min-width: 320px;
   min-height: 100%;
@@ -33,4 +14,3 @@ body {
   color: #142b4a;
   font-family: "Segoe UI", Arial, sans-serif;
 }
->>>>>>> 5bb520c (```text)
