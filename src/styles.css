@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
 	box-sizing: border-box;
 }
@@ -15,3 +16,21 @@ body {
 =======
 /* You can add global styles to this file, and also import other style files */
 >>>>>>> f539fcc (initial commit)
+=======
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #f3f8fe;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 10% 12%, rgba(196, 221, 250, 0.34), transparent 28rem),
+    linear-gradient(180deg, #f8fbff 0%, #edf4fc 100%);
+  color: #142b4a;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+>>>>>>> 5bb520c (```text)

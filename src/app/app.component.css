@@ -1,4 +1,5 @@
 :host {
+<<<<<<< HEAD
 	display: block;
 	min-height: 100vh;
 }
@@ -101,4 +102,85 @@
 	.main {
 		padding: 28px 16px;
 	}
+=======
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  min-height: 100vh;
+  padding: clamp(1.25rem, 4vw, 3.5rem);
+  color: #142b4a;
+  font-family: "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: inherit;
+}
+
+main {
+  position: relative;
+  grid-column: 1 / -1;
+  display: flex;
+  min-height: 15rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(128, 190, 255, 0.28), transparent 34%),
+    linear-gradient(120deg, #102d52, #174d82 58%, #2879b9);
+  box-shadow: 0 1.25rem 3rem rgba(20, 52, 88, 0.16);
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-inline: 1.5rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+h1 + p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-inline: 1.5rem;
+  color: #d7eaff;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+router-outlet {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  :host {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  main {
+    min-height: 13rem;
+    border-radius: 1.25rem;
+  }
+>>>>>>> 5bb520c (```text)
 }

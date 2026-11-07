@@ -1,0 +1,8 @@
+<h3>{{myProduct.productName}}</h3>
+<p>{{myProduct.description}}</p>
+<strong>מחיר: {{myProduct.price}}</strong>
+<p>מחיר לאחר הנחה: {{after_Discount_percentages}}</p>
+@if(after_Discount_percentages>=300){
+    <p>הנחה משתלמת במיוחד</p>
+}
+

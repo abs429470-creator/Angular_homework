@@ -1,0 +1,67 @@
+:host {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 13rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: 1px solid #dce8f5;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0.65rem 1.8rem rgba(35, 75, 120, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+:host::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #6bb5f3, #1d5e9d);
+  content: "";
+}
+
+:host:hover {
+  transform: translateY(-4px);
+  border-color: #b7d2ef;
+  box-shadow: 0 1rem 2.2rem rgba(35, 75, 120, 0.13);
+}
+
+h3 {
+  margin: 0 0 0.75rem;
+  color: #173c66;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: #61758e;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+strong {
+  margin-top: auto;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.65rem;
+  background: #edf5fd;
+  color: #245c91;
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+strong + p {
+  margin: 0.8rem 0 0;
+  color: #173c66;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host {
+    transition: none;
+  }
+}
