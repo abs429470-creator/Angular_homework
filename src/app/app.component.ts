@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { product } from './product.interface';
 import { ProductDetilesComponent } from './product-detiles/product-detiles.component';
-
+import { TimerComponent } from './timer/timer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgFor, ProductDetilesComponent],
+  imports: [RouterOutlet, NgFor, ProductDetilesComponent, TimerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -20,4 +20,8 @@ export class AppComponent {
     { productName: 'Product 3', factory: 'Factory 3', description: 'Description 3', price: 30, Discount_percentages: 3.5 },
     { productName: 'Product 4', factory: 'Factory 4', description: 'Description 4', price: 40, Discount_percentages: 5.0 },
   ];
+  time: number = 0;
+  countTimeLast(value: number): void {
+    this.time = value;
+  }
 }

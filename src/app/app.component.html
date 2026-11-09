@@ -1,6 +1,8 @@
 <main class="main">
   <h1>מוצרים שעושים את ההבדל</h1>
   <p>איכות שנבחרה בקפידה, בעיצוב נקי ובמחירים משתלמים</p>
+  <app-timer (countTime)="countTimeLast($event)" [timer]="10"></app-timer>
+  <p>סיכום: {{ time }} שניות</p>
 </main>
 <app-product-detiles *ngFor="let p of product_list" [myProduct]="p"></app-product-detiles>
 <router-outlet />
